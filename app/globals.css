@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Meows';
+  src: url('../public/fonts/Meows.ttf');
+}
+@font-face {
+  font-family: 'GeoSansLight';
+  src: url('../public/fonts/GeoSansLight.ttf');
+}
+.app {
+  border: solid red 4px;
+  font-family: GeoSansLight;
+}
+
+.appContent {
+  width: 70vw;
+  min-width:800px;
+  height: auto;
+  border: solid rgb(109, 109, 109) 2px;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+.background {
+  background-image: url(../public/images/dog.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
