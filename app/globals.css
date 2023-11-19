@@ -33,6 +33,20 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
+.feedContainer {
+  /* border: solid blue 4px; */
+  background: transparent;
+  margin-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* grid-column: 2; */
+  padding-bottom: 4rem;
+
+  width: 100%;
+
+}
 .background {
   position: fixed;
   background-image: url(../public/images/dog2.jpg);
@@ -57,16 +71,6 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.1); /* Black overlay with 30% opacity */
   z-index: -1;
-}
-.feedContainer {
-  /* border: solid blue 4px; */
-  background: transparent;
-  margin-top: 14rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  /* grid-column: 2; */
 }
 
 .title {

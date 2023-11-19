@@ -3,11 +3,12 @@
 const posts = [
   {
     type: 'warning',
-    content: 'We saw a coyote in the park today. It was in the lower basin area, in the bushes. Be careful when you go out for walks!',
+    content: 'We saw a coyote while crossing the street at Blackthorne this evening just before sunset. Be careful when you go out for walks!',
     date: '2023-08-06',
     time: '6:00pm',
     author: 'Growl Gadot',
-    id: 2
+    id: 4,
+    author_id: 3
   },
   {
     type: 'giveaway',
@@ -15,16 +16,27 @@ const posts = [
     date: '2023-08-06',
     time: '6:00pm',
     author: 'Bark Wahlberg',
-    id: 2
+    id: 2,
+    author_id: 5
   },
   {
     type: 'story',
     content: 'Today Aria learned squirrels can climb trees. She is not amused.',
     date: '2023-11-01',
     time: '10:00am',
-    author: 'Charles Barkley',
+    author: 'Aria',
     id: 1,
-    img: '/images/aria-canine-corners.jpeg'
+    img: '/images/aria-canine-corners.jpeg',
+    author_id: 1
+  },
+  {
+    type: 'story',
+    content: 'Anyone have any good recommendations for a dog walker? I need someone to take Charlie out for a walk while I\'m at work.',
+    date: '2023-11-01',
+    time: '10:00am',
+    author: 'Charles Barkley',
+    id: 5,
+    author_id: 6
   },
   {
     type: 'recipe',
@@ -54,7 +66,8 @@ const posts = [
     date: '2023-05-02',
     time: '6:00pm',
     author: 'Anderson Pooper',
-    id: 3
+    id: 3,
+    author_id: 2
   },
 ]
 

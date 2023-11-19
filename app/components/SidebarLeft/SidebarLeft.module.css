@@ -15,6 +15,7 @@
   background: linear-gradient(to bottom, #1999c0 0%, #085376 100%);
   background-color: rgba(26, 117, 159, 0.4);
   border-radius: 10px;
+  border: solid rgb(0, 0, 0) 1px;
   /* border: solid red 4px; */
 }
 

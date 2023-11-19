@@ -36,7 +36,7 @@ text-align: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  margin-bottom: 0;
   width: 100%;
 }
 .postType {
@@ -59,12 +59,13 @@ text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   border: solid black 1px;
-  width: 100%;
+  width: 98%;
   height: 120px;
   z-index: 5;
   padding: 1rem;
   font-size: 1.25rem;
   resize: none; /* Optional: if you don't want users to resize the textarea */
+  margin-top: 5px;
 }
 .postTextArea:focus {
   outline: none;

@@ -10,9 +10,9 @@ const dogs = [
 
 },
 {
-  name: 'Woof Blitzer',
+  name: 'Anderson Pooper',
   img: '/images/woof-profile-pic.jpeg',
-  bio: `Woof is a curious and adventurous little beagle who loves to sniff out new friends. He's always up for a game of fetch and enjoys long naps in the sun.`,
+  bio: `Andy is a curious and adventurous little beagle who loves to sniff out new friends. He's always up for a game of fetch and enjoys long naps in the sun.`,
   owner: ['Sarah Jenkins'],
   age: 3,
   breed: 'Beagle',
@@ -37,7 +37,7 @@ const dogs = [
   id: 3
 },
 {
-  name: 'Bark Ruffalo',
+  name: 'Bark Wahlberg',
   img: '/images/bark-profile-pic.png',
   bio: 'Bark is a gentle giant with a calm demeanor. As a Mastiff, he loves lounging around the house but also enjoys leisurely strolls around the neighborhood.',
   owner: ['Natalie Davis'],
@@ -46,9 +46,9 @@ const dogs = [
   id: 5
 },
 {
-  name: 'Mutt Damon',
+  name: 'Charles Barkley',
   img: '/images/mutt-profile-pic.png',
-  bio: 'Mutt is a friendly and sociable Oodle known for his curly fur and love of adventures. He enjoys outdoor activities and is always ready for a game of fetch.',
+  bio: 'Charlie is a friendly and sociable Oodle known for his curly fur and love of adventures. He enjoys outdoor activities and is always ready for a game of fetch.',
   owner: ['Alice Martin'],
   age: 3,
   breed: 'Poodle Mix',

@@ -2,10 +2,13 @@
   position: relative;
   background: rgba(255, 255, 255, 1);
   font-size: 1.25rem;
-  border: solid rgb(197, 197, 197) 1px;
+  /* border: solid rgb(197, 197, 197) 1px; */
   border-radius: 10px;
   margin: 1.5rem;
   padding: 2rem;
+  width: 94%;
+  box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.3);
+  /* border: solid red 4px; */
 }
 
 .author {

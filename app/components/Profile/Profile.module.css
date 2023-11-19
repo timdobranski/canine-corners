@@ -2,18 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 auto;
-    width: 70vw;
+    margin-top:2rem;
+    width: 100%;
     font-size: 1.5rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 5rem;
     box-sizing: border-box;
-    background-color: #76c893;
+    /* background-color: #76c893;
     background-color: rgb(197, 230, 238);
-    background: linear-gradient(to bottom right, #a4ffe7 0%, #73d3ff 100%);
-    /* color: white; */
+    background-color: rgba(26, 117, 159, 1); */
+    /* background-color: white; */
     border-radius: 10px;
+    /* overflow-y: auto; */
 }
 .profileContainer * {
 
