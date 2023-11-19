@@ -1,7 +1,13 @@
-import styles from './Sidebar.module.css';
+'use client';
+
+import styles from './SidebarLeft.module.css';
 import Link from 'next/link';
 
-export default function Sidebar () {
+
+export default function SidebarLeft () {
+
+
+
   return (
     <div className={styles.sidebarWrapper}>
       <Link href='/dogs'>
@@ -10,7 +16,7 @@ export default function Sidebar () {
       <Link href='/dogs'>
         <h2>Messages</h2>
       </Link>
-      <Link href='/dogs'>
+      <Link href='/profile?id=1'>
         <h2>Profile</h2>
       </Link>
       <Link href='/dogs'>

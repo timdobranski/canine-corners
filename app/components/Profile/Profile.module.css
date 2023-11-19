@@ -1,0 +1,35 @@
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70vw;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+.profileContainer * {
+
+}
+.imgContainer {
+  border-radius: 10px;
+}
+
+.name {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.bio {
+  margin: 1rem;
+}
+.roommate {
+  margin: 1rem;
+  border-radius: 10px;
+  padding: .5rem 1rem .5rem 1rem;;
+  background-color: #99d98c;
+}

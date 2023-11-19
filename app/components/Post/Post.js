@@ -1,5 +1,6 @@
 import { formatDistanceToNow } from 'date-fns';
 import styles from './Post.module.css';
+import Recipe from '../Recipe/Recipe';
 
 export default function Post({ data }) {
 
@@ -27,11 +28,18 @@ export default function Post({ data }) {
   };
 
   return (
+
+
     <div className={styles.post}>
+      <div className={styles.postBackground}></div>
+
         <h3 className={styles.author}>{data.author}</h3>
         <h3 className={styles.ago}>{timeFormatter(data)}</h3>
         <h3 className={styles[data.type]}>{data.type}</h3>
-        <p className={styles.content}>{data.content}</p>
+
+        {(data.type === 'recipe' ? <Recipe recipe={data} /> : <p className={styles.content}>{data.content}</p>)}
+
+
         {data.img ? <img className={styles.postImage} src={data.img} alt={data.imageAlt} /> : null}
 
       <div className={styles.postFooter}>
@@ -40,8 +48,9 @@ export default function Post({ data }) {
           <h3>Share</h3>
           <h3>Report</h3>
       </div>
+
     </div>
-  );
+  )
 }
 
 // {

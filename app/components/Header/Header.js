@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import Link from 'next/link';
 
 export default function Header() {
 
@@ -13,7 +14,9 @@ export default function Header() {
         <h2 className={styles.headerLink}>Donate</h2>
         <h2 className={styles.headerLink}>About Us</h2>
       </div>
+      {/* <Link href='/'>
       <h1 className={styles.title}>Canine Corners</h1>
+      </Link> */}
     </div>
 
   )

@@ -1,11 +1,26 @@
 .post {
-  background: rgba(255, 255, 255, 0.9);
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
   font-size: 1.25rem;
   border: solid rgb(197, 197, 197) 1px;
   border-radius: 10px;
   margin: 1.5rem;
   padding: 2rem;
 }
+.postBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../public/images/dog2.jpg');
+  background-size: cover;
+  background-attachment: fixed; /* This keeps the background fixed during scrolling */
+  background-position: center; /* Adjust as needed to match the main background */
+  filter: blur(10px);
+  z-index: -1;
+}
+
 .author {
   font-size: 1.5rem;
   font-weight: 800;

@@ -6,7 +6,8 @@ const dogs = [
   owner: ['Tim Dobranski'],
   age: 5,
   breed: 'Pomsky',
-  id: 1
+  id: 1,
+
 },
 {
   name: 'Woof Blitzer',
@@ -27,9 +28,9 @@ const dogs = [
   id: 4
 },
 {
-  name: 'Charlie Corgi',
+  name: 'Growl Gadot',
   img: '/images/charlie-profile-pic.png',
-  bio: 'Charlie is a charming and energetic Corgi with a love for long walks and chasing squirrels. He has a friendly disposition and enjoys being the center of attention.',
+  bio: 'Growl is a charming and energetic Corgi with a love for long walks and chasing squirrels. She has a friendly disposition and enjoys being the center of attention.',
   owner: ['Emma Brown'],
   age: 2,
   breed: 'Corgi',

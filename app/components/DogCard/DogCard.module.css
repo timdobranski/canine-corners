@@ -5,7 +5,7 @@
   background-color: white;
   text-align: center;
   margin: 1rem;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -14,6 +14,9 @@
   width: 300px;
   height: 216px;
   border: solid white 8px;
+  border-radius: 10px;
+}
+.dogCardImage img {
   border-radius: 10px;
 }
 .dogCardInfoWrapper {
@@ -26,6 +29,7 @@
   font-weight: bold;
   margin: 0rem 0rem .5rem 0rem;
   background-color: #99d98c;
+  border-radius: 10px;
 }
 .ageBreed {
   text-decoration: underline;

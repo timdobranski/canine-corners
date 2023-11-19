@@ -25,7 +25,7 @@
   display: grid;
   /* grid-template-columns: 200px 1fr; */
   animation-name: fade-in;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
@@ -38,16 +38,41 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 40px);
   width: 100vw;
   overflow-y: auto;
+  z-index: -2;
 
+}
+.background::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Black overlay with 30% opacity */
+  z-index: -1;
 }
 .feedContainer {
   /* border: solid blue 4px; */
   background: transparent;
   margin-top: 8rem;
   /* grid-column: 2; */
+}
+
+.title {
+  display: inline-block;
+  font-size: 5rem;
+  font-family: Meows;
+  /* border: solid red 4px; */
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 0;
+  color: #60ff8b;
+  color: rgb(0, 0, 0);
+
 }
 
 /* fade-in */
