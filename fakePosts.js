@@ -3,7 +3,7 @@
 const posts = [
   {
     type: 'warning',
-    content: 'We saw a coyote in the park today. Be careful when you go out for walks!',
+    content: 'We saw a coyote in the park today. It was in the lower basin area, in the bushes. Be careful when you go out for walks!',
     date: '2023-08-06',
     time: '6:00pm',
     author: 'Growl Gadot',
@@ -19,7 +19,7 @@ const posts = [
   },
   {
     type: 'story',
-    content: 'Aria went squirell hunting today. She didn\'t catch any, but she sure had fun trying!',
+    content: 'Today Aria learned squirrels can climb trees. She is not amused.',
     date: '2023-11-01',
     time: '10:00am',
     author: 'Charles Barkley',

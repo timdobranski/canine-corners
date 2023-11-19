@@ -11,8 +11,8 @@ export default function ComposePost() {
 
   return (
     <div className={styles.composePostContainer}>
-      {/* <h1 className={styles.composePostTitle}>Bark:</h1> */}
-      <p className={styles.postDescription}>{`Bark out a fun story, a neighborhood warning, a favorite food or treat recipe, or anything you'd like to giveaway to a new puppy!`}</p>
+      <h1 className={styles.composePostTitle}>Bark Away!</h1>
+      {/* <p className={styles.postDescription}>{`Bark out a fun story, a neighborhood warning, a favorite food or treat recipe, or anything you'd like to giveaway to a new puppy!`}</p> */}
       <form className={styles.composeForm}>
         <div className={styles.postTypesContainer}>
           <label className={styles.postType}>Story</label>

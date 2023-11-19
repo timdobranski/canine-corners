@@ -1,0 +1,35 @@
+.dogCardWrapper {
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dogCardImage {
+  position: relative;
+  width: 300px;
+  height: 216px;
+  border: solid white 8px;
+  border-radius: 10px;
+}
+.dogCardInfoWrapper {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0rem 0rem .5rem 0rem;
+  background-color: #99d98c;
+}
+.ageBreed {
+  text-decoration: underline;
+}
+.bio {
+  margin: .5rem 0rem .5rem 0rem;
+}

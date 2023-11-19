@@ -1,0 +1,9 @@
+.allDogsContainer {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width as needed */
+  gap: 1rem; /* Space between grid items */
+  padding: 1rem; /* Optional: Padding around the grid */
+  justify-items: center; /* Center items horizontally */
+  align-items: start; /* Align items to the start of each row */
+}

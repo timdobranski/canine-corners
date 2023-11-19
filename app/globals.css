@@ -16,13 +16,14 @@
 }
 
 .appContent {
-  width: 60vw;
+  width: 50vw;
   min-width:800px;
   height: auto;
-  margin-top:2rem;
+  padding-top: 0;
+
   /* padding-top: 2rem; */
   display: grid;
-  grid-template-columns: 200px 1fr;
+  /* grid-template-columns: 200px 1fr; */
   animation-name: fade-in;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -45,7 +46,8 @@
 .feedContainer {
   /* border: solid blue 4px; */
   background: transparent;
-  grid-column: 2;
+  margin-top: 8rem;
+  /* grid-column: 2; */
 }
 
 /* fade-in */

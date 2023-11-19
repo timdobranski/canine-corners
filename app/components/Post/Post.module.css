@@ -1,9 +1,9 @@
 .post {
   background: rgba(255, 255, 255, 0.9);
   font-size: 1.25rem;
-  /* border: solid gray 2px; */
+  border: solid rgb(197, 197, 197) 1px;
   border-radius: 10px;
-  margin: 1rem;
+  margin: 1.5rem;
   padding: 2rem;
 }
 .author {

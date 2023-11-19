@@ -5,12 +5,13 @@ import Feed from './components/Feed/Feed';
 
 export default function Home() {
   return (
-
+    <>
+      <Sidebar />
       <div className='appContent'>
-        <Sidebar />
         <ComposePost />
         <Feed />
       </div>
+    </>
 
 
   )

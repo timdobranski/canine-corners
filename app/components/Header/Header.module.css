@@ -1,7 +1,7 @@
 .headerWrapper {
   box-sizing: border-box;
   width: 100%;
-  height: 170px;
+  height: 140px;
   /* background: linear-gradient(to right, #ff9277 0%, #ffd57a 100%); */
   background-color: #1a759f;
 
@@ -29,7 +29,7 @@
 }
 .title {
   display: inline-block;
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: Meows;
   /* border: solid red 4px; */
   margin: 0 auto;
