@@ -1,0 +1,56 @@
+.post {
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  /* border: solid gray 2px; */
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+}
+.author {
+  font-size: 1.5rem;
+  font-weight: 800;
+  /* font-family: Meows; */
+}
+.date {
+
+}
+.time {
+
+}
+.content {
+  padding: 1rem 0rem 1rem .5rem;
+
+}
+.postFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #99d98c;
+  border-radius: 10px;
+  padding: .5rem 2rem .5rem 2rem;
+}
+.story{
+  background-color:#99d98c;
+  display: inline-block;
+  padding: .25rem .5rem .25rem .5rem;
+}
+.recipe {
+  background-color:#f7ec96;
+  display: inline-block;
+  padding: .25rem .5rem .25rem .5rem;
+}
+.warning {
+  background-color:#fbb3b3;
+  display: inline-block;
+  padding: .25rem .5rem .25rem .5rem;
+}
+.giveaway {
+  background-color:#cbbcf9;
+  display: inline-block;
+  padding: .25rem .5rem .25rem .5rem;
+}
+.postImage {
+  margin: 1rem;
+  height: 400px;
+}

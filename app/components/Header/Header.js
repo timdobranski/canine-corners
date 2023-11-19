@@ -6,6 +6,8 @@ export default function Header() {
     <div className={styles.headerWrapper}>
       <div className={styles.navBar}>
         <h2 className={styles.loginButton}>Login</h2>
+        <h2 className={styles.headerLink}>Posts</h2>
+        <h2 className={styles.headerLink}>Photos</h2>
         <h2 className={styles.headerLink}>Announcements</h2>
         <h2 className={styles.headerLink}>Events</h2>
         <h2 className={styles.headerLink}>Donate</h2>

@@ -4,7 +4,8 @@
   justify-content: flex-start;
   align-items: center;
   /* background: linear-gradient(to right, #77fff1 0%, #7abfff 100%); */
-  background-color: #1a759f;
+  background: linear-gradient(to bottom, #168aad 0%, #1a759f 100%);
+  border-radius: 10px;
   /* border: solid red 4px; */
 }
 

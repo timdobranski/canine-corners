@@ -1,10 +1,15 @@
 .headerWrapper {
   box-sizing: border-box;
   width: 100%;
+  height: 170px;
   /* background: linear-gradient(to right, #ff9277 0%, #ffd57a 100%); */
-  background-color: #99d98c;
+  background-color: #1a759f;
+
+  /* background: linear-gradient(to bottom, #1a759f 0%, #408eb3 100%);
+  background: linear-gradient(to bottom, #168aad 0%, #1a759f 100%); */
+
   text-align: center;
-  padding-bottom: .5rem;
+  /* padding-bottom: .5rem; */
 }
 .navBar {
   display: flex;
@@ -14,10 +19,23 @@
 }
 .navBar * {
   color: #34a0a4;
+  color: white;
   font-weight: bold;
   font-size: 1.5rem;
 }
+.navBar h2:hover {
+  color: #60ff8b;
+  cursor: pointer;
+}
 .title {
-  font-size: 5rem;
+  display: inline-block;
+  font-size: 6rem;
   font-family: Meows;
+  /* border: solid red 4px; */
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0;
+  color: #60ff8b;
+  color: white;
+
 }
