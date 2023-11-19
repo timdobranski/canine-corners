@@ -5,7 +5,7 @@ export default function SidebarLeft () {
   return (
     <div className={styles.sidebarWrapper}>
 
-        <h2>Friends At The Park Today:</h2>
+        <h2 className={styles.header}>Friends At The Park Today:</h2>
         <div className={styles.atPark}>
           <h2 className={styles.name}>Aria</h2>
           <p className={styles.time}>10:00am</p>

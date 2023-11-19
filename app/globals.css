@@ -20,7 +20,11 @@
   min-width:800px;
   height: auto;
   padding-top: 0;
-
+  margin-top: 1rem;
+  background-color: rgba(26, 117, 159, 0.5);
+  border-left: solid rgb(114, 114, 114) 1px;
+  border: solid rgb(114, 114, 114) 1px;
+  border-radius: 10px;
   /* padding-top: 2rem; */
   display: grid;
   /* grid-template-columns: 200px 1fr; */
@@ -57,7 +61,11 @@
 .feedContainer {
   /* border: solid blue 4px; */
   background: transparent;
-  margin-top: 8rem;
+  margin-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   /* grid-column: 2; */
 }
 
@@ -67,12 +75,13 @@
   font-family: Meows;
   /* border: solid red 4px; */
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: .5rem;
   margin-bottom: 0;
   padding: 0;
   color: #60ff8b;
   color: rgb(0, 0, 0);
-
+  /* border: solid red 4px; */
+  margin-bottom: -20px;
 }
 
 /* fade-in */

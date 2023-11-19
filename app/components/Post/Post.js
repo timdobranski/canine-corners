@@ -1,6 +1,8 @@
 import { formatDistanceToNow } from 'date-fns';
 import styles from './Post.module.css';
 import Recipe from '../Recipe/Recipe';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import  { faThumbsUp, faComment, faShare, faFlag } from '@fortawesome/free-solid-svg-icons';
 
 export default function Post({ data }) {
 
@@ -31,7 +33,7 @@ export default function Post({ data }) {
 
 
     <div className={styles.post}>
-      <div className={styles.postBackground}></div>
+
 
         <h3 className={styles.author}>{data.author}</h3>
         <h3 className={styles.ago}>{timeFormatter(data)}</h3>
@@ -43,10 +45,22 @@ export default function Post({ data }) {
         {data.img ? <img className={styles.postImage} src={data.img} alt={data.imageAlt} /> : null}
 
       <div className={styles.postFooter}>
-          <h3>Like</h3>
-          <h3>Comment</h3>
-          <h3>Share</h3>
-          <h3>Report</h3>
+        <div className={styles.postReactContainer}>
+          <FontAwesomeIcon icon={faThumbsUp} className={styles.icon}/>
+          {/* <h3>Like</h3> */}
+        </div>
+        <div className={styles.postReactContainer}>
+          <FontAwesomeIcon icon={faComment} className={styles.icon}/>
+          {/* <h3>Comment</h3> */}
+        </div>
+        <div className={styles.postReactContainer}>
+          <FontAwesomeIcon icon={faShare} className={styles.icon}/>
+          {/* <h3>Share</h3> */}
+        </div>
+        <div className={styles.postReactContainer}>
+          <FontAwesomeIcon icon={faFlag} className={styles.icon}/>
+          {/* <h3>Report</h3> */}
+        </div>
       </div>
 
     </div>

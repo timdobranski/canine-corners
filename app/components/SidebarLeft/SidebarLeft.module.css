@@ -3,14 +3,17 @@
   top: 200px;
   left: 0;
   margin: 1rem;
-  /* height: calc(100vh - 40px - 2rem); */
+  width:250px;
+
+  height: calc(100vh - 240px - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
   /* background: linear-gradient(to right, #77fff1 0%, #7abfff 100%); */
-  background: linear-gradient(to bottom, #168aad 0%, #1a759f 100%);
+  background: linear-gradient(to bottom, #1999c0 0%, #085376 100%);
+  background-color: rgba(26, 117, 159, 0.4);
   border-radius: 10px;
   /* border: solid red 4px; */
 }

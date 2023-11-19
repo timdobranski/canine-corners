@@ -1,0 +1,38 @@
+/* .filterSelect {
+    width: 80%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+} */
+.filterButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  padding: .5rem;
+  font-size: 1.25rem;
+}
+.filterButtons button {
+  position: relative;
+  padding: .5rem 1rem .5rem 1rem;
+  /* border: solid red 4px; */
+  height: 100%;
+}
+.selectedFilter {
+  background-color: rgb(92, 184, 237);
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  /* Add other styles as needed */
+}

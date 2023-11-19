@@ -1,24 +1,11 @@
 .post {
   position: relative;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 1);
   font-size: 1.25rem;
   border: solid rgb(197, 197, 197) 1px;
   border-radius: 10px;
   margin: 1.5rem;
   padding: 2rem;
-}
-.postBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../../public/images/dog2.jpg');
-  background-size: cover;
-  background-attachment: fixed; /* This keeps the background fixed during scrolling */
-  background-position: center; /* Adjust as needed to match the main background */
-  filter: blur(10px);
-  z-index: -1;
 }
 
 .author {
@@ -42,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #99d98c;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: .5rem 2rem .5rem 2rem;
 }
 .story{
@@ -68,4 +55,20 @@
 .postImage {
   margin: 1rem;
   height: 400px;
+}
+.postReactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: .5rem; */
+}
+.postReactContainer h3 {
+  font-size: 1rem;
+}
+.icon {
+  font-size: 1.5rem;
+  /* color: #1a759f; */
+  cursor: pointer;
+  padding: .25rem;
 }

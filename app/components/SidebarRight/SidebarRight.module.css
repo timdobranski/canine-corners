@@ -1,17 +1,19 @@
 .sidebarWrapper {
   top: 200px;
   position: fixed;
+  text-align:center;
   /* box-sizing: content-box; */
-  right: 1rem;;
+  right: 1rem;
   margin: 1rem;
-  /* height: calc(100vh - 40px - 2rem); */
+  width:250px;
+  height: calc(100vh - 240px - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
   /* background: linear-gradient(to right, #77fff1 0%, #7abfff 100%); */
-  background: linear-gradient(to bottom, #168aad 0%, #1a759f 100%);
+  background: linear-gradient(to bottom, #1999c0 0%, #085376 100%);
   border-radius: 10px;
   /* border: solid red 4px; */
 }
@@ -23,10 +25,14 @@
   color: white;
   /* border: solid green 2px; */
 }
+.header {
+
+  width: 70%;
+}
 .atPark {
   background-color: #99d98c;
   border-radius: 10px;
-  padding: .5rem;
+  /* padding: .5rem; */
   width: 100%;
   text-align: center;
   font-size: 1.5rem;

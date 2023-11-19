@@ -9,7 +9,10 @@
     text-align: center;
     padding: 1rem;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #76c893;
+    background-color: rgb(197, 230, 238);
+    background: linear-gradient(to bottom right, #a4ffe7 0%, #73d3ff 100%);
+    /* color: white; */
     border-radius: 10px;
 }
 .profileContainer * {
@@ -32,4 +35,6 @@
   border-radius: 10px;
   padding: .5rem 1rem .5rem 1rem;;
   background-color: #99d98c;
+  background-color: #1a759f;
+  background-color: white;
 }
