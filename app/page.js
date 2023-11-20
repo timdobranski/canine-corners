@@ -17,20 +17,20 @@ export default function Home() {
       <div className={'appContent'}>
         <h1 className='title'>Canine Corners</h1>
 
-        {showLeftSidebar && (
+        {/* {showLeftSidebar && (
           <div className='sidebarLeftWrapper'>
             <SidebarLeft />
           </div>
-        )}
+        )} */}
 
         <ComposePost />
         <Feed />
 
-        {showRightSidebar && (
+        {/* {showRightSidebar && (
           <div className='sidebarRightWrapper'>
             <SidebarRight />
           </div>
-        )}
+        )} */}
       </div>
     </>
   );
