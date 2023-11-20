@@ -1,6 +1,7 @@
 import './globals.css'
-import Header from './components/Header/Header'
-
+import Header from './components/Header/Header';
+import SidebarLeft from './components/SidebarLeft/SidebarLeft';
+import SidebarRight from './components/SidebarRight/SidebarRight';
 
 export const metadata = {
   title: 'Canine Corners',
@@ -13,6 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className='app'>
         <Header />
+        <SidebarLeft />
+        <SidebarRight />
         <div className='background'>
           {children}
         </div>

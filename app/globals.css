@@ -7,6 +7,10 @@
   src: url('../public/fonts/Meows.ttf');
 }
 @font-face {
+  font-family: 'Kitten Klub';
+  src: url('../public/fonts/KittenKlub.ttf');
+}
+@font-face {
   font-family: 'GeoSansLight';
   src: url('../public/fonts/GeosansLight.ttf');
 }
@@ -17,6 +21,7 @@
 
 
 .appContent {
+  opacity: 0;
   width: 50vw;
   min-width:500px;
   height: auto;
@@ -27,25 +32,26 @@
   border: solid rgb(114, 114, 114) 1px;
   border-radius: 10px;
   display: grid;
-  /* grid-template-columns: 200px 1fr; */
-  /* animation-name: fade-in;
+  animation-name: fade-in;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in; */
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
 }
 .feedContainer {
   /* border: solid blue 4px; */
   background: transparent;
-  margin-top: 14rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   /* grid-column: 2; */
   padding-bottom: 4rem;
-
   width: 100%;
-
+}
+.feedOffset {
+  margin-top: 18rem;
 }
 .background {
   position: fixed;
@@ -75,17 +81,18 @@
 
 .title {
   display: inline-block;
-  font-size: 5rem;
-  font-family: Meows;
+  font-size: 4rem;
+  font-family: Kitten Klub;
   /* border: solid red 4px; */
   margin: 0 auto;
-  margin-top: .5rem;
+  margin-top: 1rem;
   margin-bottom: 0;
   padding: 0;
   color: #60ff8b;
-  color: rgb(0, 0, 0);
+  color: white;
   /* border: solid red 4px; */
   margin-bottom: -20px;
+
 }
 
 /* fade-in */
@@ -101,15 +108,14 @@
 
 @media(max-width: 768px) {
   .title {
-    font-size: 3.5rem;
-    color: white;
+    font-size: 2rem;
+    color: black;
   }
   .appContent {
-
     min-width:96vw;
     height: auto;
     padding-top: 0;
-    margin-top: 1rem;
+    /* margin-top: 20rem; */
     /* background-color: rgba(26, 117, 159, 0.5); */
     /* border-left: solid rgb(114, 114, 114) 1px;
     border: solid rgb(114, 114, 114) 1px; */

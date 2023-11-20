@@ -1,9 +1,14 @@
 .headerWrapper {
+  height: 100px;
   box-sizing: border-box;
   width: 100%;
   background-color: #1a759f;
   text-align: center;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
 
 }
 .navBar {
@@ -24,16 +29,7 @@
   color: #60ff8b;
   cursor: pointer;
 }
-.title {
-  display: inline-block;
-  font-size: 1.25rem;
-  background-color: #99d98c;
-  margin: 0 auto;
-  padding: 0;
-  color: black;
-  border-radius: 10px;
-  padding: .25rem .5rem .25rem .5rem;
-}
+
 
 .navToggle {
   display: none;
@@ -49,6 +45,24 @@
 .navToggleLeft, .navToggleRight {
   display: none;
 
+}
+.profileButton {
+  overflow: hidden;
+  position: absolute;
+  right: .5rem;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 2rem;
+  border-radius: 50%;
+  padding: .25rem .5rem .25rem .5rem;
+  border: solid white 2px;
+}
+.profileButton:hover {
+  transform: scale(.9);
+  cursor: pointer;
+  border: solid 2px #60ff8b;
 }
 
 @media (max-width: 768px) {

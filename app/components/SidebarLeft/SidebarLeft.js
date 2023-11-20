@@ -10,24 +10,21 @@ export default function SidebarLeft() {
     <>
     <div className={styles.sidebarWrapper}>
       {/* Regular Links */}
+      <Link href='/'><h1 className={styles.title}>Home</h1></Link>
       <Link href='/dogs'><h2>Friends</h2></Link>
       <Link href='/messages'><h2>Messages</h2></Link>
       <Link href='/profile?id=1'><h2>Profile</h2></Link>
       <Link href='/schedule'><h2>Your Schedule</h2></Link>
+      <div className={styles.divider}></div>
+      <h2>Park Links</h2>
+      <Link href='/'><h2 className={styles.headerLink}>Photos</h2></Link>
+      <Link href='/'><h2 className={styles.headerLink}>Announcements</h2></Link>
+      <Link href='/'><h2 className={styles.headerLink}>Events</h2></Link>
+      <Link href='/'><h2 className={styles.headerLink}>Donate</h2></Link>
+      <Link href='/'><h2 className={styles.headerLink}>About Us</h2></Link>
+
 
     </div>
-      {/* Dropdown for mobile */}
-      {/* <select
-        className={styles.mobileSidebarDropdown}
-        value={selectedPage}
-        onChange={handleDropdownChange}
-
-      >
-        <option value='/dogs'>Dogs</option>
-        <option value='/messages'>Messages</option>
-        <option value='/profile?id=1'>Profile</option>
-        <option value='/schedule'>Your Schedule</option>
-      </select> */}
     </>
   );
 }

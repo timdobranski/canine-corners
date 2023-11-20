@@ -1,19 +1,20 @@
 .sidebarWrapper {
   position: fixed;
-  top: 200px;
+  top: 100px;
   left: 0;
   margin: 1rem;
-  width:250px;
-
-  height: calc(100vh - 240px - 2rem);
+  width:12vw;
+  min-width: 200px;
+  /* height: calc(100vh - 140px - 2rem); */
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
   /* background: linear-gradient(to right, #77fff1 0%, #7abfff 100%); */
-  background: linear-gradient(to bottom, #1999c0 0%, #085376 100%);
-  background-color: rgba(26, 117, 159, 0.4);
+  /* background: linear-gradient(to bottom, #1999c0 0%, #085376 100%); */
+  background-color: rgba(26, 117, 159, 1);
   border-radius: 10px;
   border: solid rgb(0, 0, 0) 1px;
   /* border: solid red 4px; */
@@ -21,13 +22,22 @@
 
 
 .sidebarWrapper * {
-  margin: .5rem;
+  margin: .25rem;
   font-size: 1.5rem;
+  /* background-color: #99d98c; */
+  border-radius: 5px;
+  text-align: center;
+  width: 90%;
+  padding-top: 0;
+  padding-bottom: 0;
   color: white;
   /* border: solid green 2px; */
 }
-.sidebarWrapper {
-
+.sidebarWrapper *:hover {
+  transform: scale(1.1);
+  color: #60ff8b;
+  cursor: pointer;
+  /* border: solid 2px #60ff8b; */
 }
 
 .sidebarOpen {
@@ -38,7 +48,13 @@
   display: none; /* Hide by default, show only in mobile view */
   /* Style your toggle button */
 }
+.divider {
+  width: 70px;
+  height: 0px;
 
+  border: solid rgb(169, 169, 169) 1px;
+  margin: 1rem;
+}
 
 @media (max-width: 768px) {
   .sidebarWrapper {

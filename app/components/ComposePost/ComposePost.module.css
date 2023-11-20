@@ -10,7 +10,10 @@ text-align: center;
 .composePostTitle {
   font-size: 2rem;
   margin-bottom: -10px;
-
+}
+.composePostSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: -10px;
 }
 .postDescription {
   font-size: 1.25rem;
@@ -72,7 +75,7 @@ text-align: center;
   font-size: 1.25rem;
   padding: .5rem 1rem .5rem 1rem;
   border-radius: 10px;
-  margin-right: 80%
+  /* margin-right: 80% */
 }
 .mobilePostTypeDropdown {
   display: none; /* Hide by default, show only in mobile view */
@@ -108,6 +111,25 @@ text-align: center;
     display: none;
   }
 }
+.recipeLabel {
+  background-color:#f7ec96;
+  border: solid 2px #000000;
+
+}
+.storyLabel {
+  background-color: #4dc5e9;
+  border: solid 2px #000000;
+}
+.warningLabel {
+  background-color:#fbb3b3;
+  border: solid 2px #000000;
+}
+
+.giveawayLabel {
+  background-color:#cbbcf9;
+  border: solid 2px #000000;
+}
+
 
 @media(max-width: 500px) {
   .postTextArea {

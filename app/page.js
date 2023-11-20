@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <div className={'appContent'}>
-        <h1 className='title'>Canine Corners</h1>
+        {/* <h1 className='title'>Canine Corners</h1> */}
 
         {showLeftSidebar && (
           <div className='sidebarLeftWrapper'>
@@ -24,7 +24,9 @@ export default function Home() {
         )}
 
         <ComposePost />
-        <Feed />
+        {/* <div className='feedOffset'> */}
+          <Feed />
+        {/* </div> */}
 
         {showRightSidebar && (
           <div className='sidebarRightWrapper'>
