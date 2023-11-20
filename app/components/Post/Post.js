@@ -35,33 +35,33 @@ export default function Post({ data }) {
     <div className={styles.post}>
 
 
-        <h3 className={styles.author}>{data.author}</h3>
-        <h3 className={styles.ago}>{timeFormatter(data)}</h3>
-        <h3 className={styles[data.type]}>{data.type}</h3>
+        {/* <h3 className={styles.author}>{data.author}</h3>
+        <h3 className={styles.ago}>{data}</h3>
+        <h3 className={styles[data.type]}>{data.type}</h3> */}
 
         {(data.type === 'recipe' ? <Recipe recipe={data} /> : <p className={styles.content}>{data.content}</p>)}
 
 
         {data.img ? <img className={styles.postImage} src={data.img} alt={data.imageAlt} /> : null}
 
-      <div className={styles.postFooter}>
+      {/* <div className={styles.postFooter}>
         <div className={styles.postReactContainer}>
           <FontAwesomeIcon icon={faThumbsUp} className={styles.icon}/>
-          {/* <h3>Like</h3> */}
+
         </div>
         <div className={styles.postReactContainer}>
           <FontAwesomeIcon icon={faComment} className={styles.icon}/>
-          {/* <h3>Comment</h3> */}
+
         </div>
         <div className={styles.postReactContainer}>
           <FontAwesomeIcon icon={faShare} className={styles.icon}/>
-          {/* <h3>Share</h3> */}
+
         </div>
         <div className={styles.postReactContainer}>
           <FontAwesomeIcon icon={faFlag} className={styles.icon}/>
-          {/* <h3>Report</h3> */}
+
         </div>
-      </div>
+      </div> */}
 
     </div>
   )

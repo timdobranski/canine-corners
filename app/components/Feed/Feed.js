@@ -60,9 +60,9 @@ export default function Feed({ id }) {
       </div>
 
       {/* Render posts */}
-      {/* {displayPosts.map(post => (
+      {displayPosts.map(post => (
         <Post data={post} key={post.id} />
-      ))} */}
+      ))}
     </div>
   );
 }
