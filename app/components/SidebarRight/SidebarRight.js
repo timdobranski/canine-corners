@@ -1,5 +1,8 @@
+'use client';
+
 import styles from './SidebarRight.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function SidebarLeft () {
   return (

@@ -17,7 +17,7 @@
 
 .appContent {
   width: 50vw;
-  min-width:800px;
+  min-width:500px;
   height: auto;
   padding-top: 0;
   margin-top: 1rem;
@@ -100,18 +100,20 @@
 
 @media(max-width: 768px) {
   .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    color: white;
   }
   .appContent {
-    width: 50vw;
+
     min-width:96vw;
     height: auto;
     padding-top: 0;
     margin-top: 1rem;
-    background-color: rgba(26, 117, 159, 0.5);
-    border-left: solid rgb(114, 114, 114) 1px;
-    border: solid rgb(114, 114, 114) 1px;
-    border-radius: 10px;
+    /* background-color: rgba(26, 117, 159, 0.5); */
+    /* border-left: solid rgb(114, 114, 114) 1px;
+    border: solid rgb(114, 114, 114) 1px; */
+    background-color: rgb(38, 116, 150);
+    /* border-radius: 10px; */
     display: grid;
   }
   .feedContainer {
@@ -120,9 +122,7 @@
   .background {
     background-image: none;
   }
-  @media (max-width: 768px) {
-    .sidebarLeftWrapper, .sidebarRightWrapper {
-      display: none;
-    }
-  }
+  .sidebarLeftWrapper, .sidebarRightWrapper {
+    display: none;
+}
 }

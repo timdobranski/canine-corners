@@ -1,5 +1,6 @@
 .allDogsContainer {
   text-align: center;
+
 }
 .dogsPageTitle {
   font-size: 3rem;
@@ -7,4 +8,11 @@
 
 .dogsPageDescription {
   font-size: 2rem;
+}
+
+@media(max-width:768px) {
+  .allDogsContainer {
+    width: 96%;
+
+  }
 }

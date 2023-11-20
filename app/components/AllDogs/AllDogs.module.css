@@ -7,3 +7,13 @@
   justify-items: center; /* Center items horizontally */
   align-items: start; /* Align items to the start of each row */
 }
+
+@media(max-width: 768px) {
+  .allDogsContainer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* border: solid green 3px; */
+  }
+}

@@ -37,3 +37,19 @@
 .bio {
   margin: .5rem 0rem .5rem 0rem;
 }
+
+@media(max-width: 768px) {
+  .dogCardWrapper {
+    width: 100%;
+
+
+  }
+  .dogCardImage {
+    width: 98%;
+
+    margin: 0 auto;
+    margin-top: 1rem;
+
+  }
+
+}

@@ -56,5 +56,6 @@
   .hiddenOnDesktop {
     display: block; /* Show on mobile */
     font-size: 1.5rem;
+    color: white;
   }
 }

@@ -1,15 +1,10 @@
 .headerWrapper {
   box-sizing: border-box;
   width: 100%;
-  /* height: 50px; */
-  /* background: linear-gradient(to right, #ff9277 0%, #ffd57a 100%); */
   background-color: #1a759f;
-
-  /* background: linear-gradient(to bottom, #1a759f 0%, #408eb3 100%);
-  background: linear-gradient(to bottom, #168aad 0%, #1a759f 100%); */
-
   text-align: center;
-  /* padding-bottom: .5rem; */
+  display: block;
+
 }
 .navBar {
   display: flex;
@@ -17,6 +12,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+
 }
 .navBar * {
   color: #34a0a4;
@@ -45,21 +41,32 @@
 
 .navBar {
   display: flex;
-  /* Your existing styles */
 }
 
 .navOpen {
   display: flex;
 }
+.navToggleLeft, .navToggleRight {
+  display: none;
+
+}
 
 @media (max-width: 768px) {
   .headerWrapper{
-
+    height: 50px;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: .5rem;
+    background-color: #99d98c;
+    border-radius: 10px;
   }
+
   .navBar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #1a759f;
+    margin-top: .85rem;
   }
   .navBar * {
     margin: .5rem;
@@ -68,8 +75,15 @@
     font-size: 1rem;
   }
   .navToggle {
-    display: inline-block; /* Show toggle button on mobile */
-    /* Additional styles for your toggle button */
+    display: inline-block;
+  }
+  .navToggleLeft {
+    margin-right: 3rem;
+    display: inline-block;
+  }
+  .navToggleRight {
+    margin-left: 3rem;
+    display: inline-block;
   }
 
   .navBar {
@@ -82,9 +96,24 @@
     display: flex; /* Show navbar when navOpen class is added */
   }
   .navButton {
-    font-size: 2rem;
-    margin: .5rem;
-    left: 0;
+    font-size: 1.5rem;
+    /* margin: .5rem;
+    left: 0; */
+    /* border: solid red 4px; */
+    color: black;
+  }
+  .buttonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid red 4px; */
+    width: 100%;
+    padding-top: .33rem;
+
+    /* margin: 0 auto; */
+    /* margin-top: 1rem; */
+    /* margin-bottom: 1rem; */
   }
 
 }
