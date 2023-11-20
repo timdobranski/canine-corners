@@ -35,9 +35,9 @@ export default function Post({ data }) {
     <div className={styles.post}>
 
 
-        {/* <h3 className={styles.author}>{data.author}</h3>
-        <h3 className={styles.ago}>{data}</h3>
-        <h3 className={styles[data.type]}>{data.type}</h3> */}
+        <h3 className={styles.author}>{data.author}</h3>
+        <h3 className={styles.ago}>{timeFormatter(data)}</h3>
+        <h3 className={styles[data.type]}>{data.type}</h3>
 
         {(data.type === 'recipe' ? <Recipe recipe={data} /> : <p className={styles.content}>{data.content}</p>)}
 
