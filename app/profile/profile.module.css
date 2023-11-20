@@ -29,3 +29,17 @@
   background-color: white;
   font-size: 2rem;
 }
+
+@media(max-width:768px) {
+  .profilePageContainer {
+    margin-top: 0;
+    width: 100vw;
+    min-width: 100vw;
+  }
+  .scheduleContainer {
+    margin: 1rem;
+  }
+  .scheduleContainer h2 {
+    font-size: 1.5rem;
+  }
+}

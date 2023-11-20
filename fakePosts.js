@@ -41,6 +41,7 @@ const posts = [
   {
     type: 'recipe',
     title: 'Gopher Giggles Dog Treats',
+    description: `My dog's grandma used to make these treats for him when he was a puppy. He loved them so much that I had to get the recipe from her!`,
     img: '/images/gopher.png',
     ingredients:
     [`1 cup of 'Gopher Grain' (whole wheat flour)`,

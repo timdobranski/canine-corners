@@ -25,13 +25,12 @@
   border-left: solid rgb(114, 114, 114) 1px;
   border: solid rgb(114, 114, 114) 1px;
   border-radius: 10px;
-  /* padding-top: 2rem; */
   display: grid;
   /* grid-template-columns: 200px 1fr; */
-  animation-name: fade-in;
+  /* animation-name: fade-in;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in; */
 }
 .feedContainer {
   /* border: solid blue 4px; */
@@ -95,5 +94,30 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .appContent {
+    width: 50vw;
+    min-width:96vw;
+    height: auto;
+    padding-top: 0;
+    margin-top: 1rem;
+    background-color: rgba(26, 117, 159, 0.5);
+    border-left: solid rgb(114, 114, 114) 1px;
+    border: solid rgb(114, 114, 114) 1px;
+    border-radius: 10px;
+    display: grid;
+  }
+  .feedContainer {
+    margin-top: 2rem;
+  }
+  .background {
+    background-image: none;
   }
 }

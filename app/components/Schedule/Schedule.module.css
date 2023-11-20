@@ -43,6 +43,9 @@
 
 @media screen and (max-width: 768px) {
   .schedule-table {
-    width: 100%;
+    width: 96vw;
+  }
+  .scheduleWrapper {
+    width: 96vw;
   }
 }

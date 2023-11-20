@@ -11,8 +11,8 @@ export default function Inbox() {
 
   return (
     <>
-      <div className='inboxWrapper'>
-        <h1>Inbox</h1>
+      <div className={styles.inboxWrapper}>
+        <h1 className={styles.title}>Inbox</h1>
         {messages.map(message => {
           return (
             <div key={message.id} className={styles.messageContainer}>

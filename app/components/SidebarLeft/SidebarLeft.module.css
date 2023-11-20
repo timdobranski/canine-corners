@@ -26,3 +26,35 @@
   color: white;
   /* border: solid green 2px; */
 }
+.sidebarWrapper {
+
+}
+
+.sidebarOpen {
+  display: flex; /* Show the sidebar when it is open */
+}
+
+.sidebarToggle {
+  display: none; /* Hide by default, show only in mobile view */
+  /* Style your toggle button */
+}
+
+
+@media (max-width: 768px) {
+  .sidebarWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .sidebarWrapper > h2 {
+    /* display: none;  */
+  }
+  .sidebarToggle {
+    display: block;
+  }
+  .mobileSidebarDropdown {
+    position: fixed;
+
+  }
+
+}

@@ -21,27 +21,6 @@ const dogs = [
   favorite_activities: ["Fetch", "Tug of War", "Hide and Seek"]
 },
 {
-  name: 'Anderson Pooper',
-  img: '/images/woof-profile-pic.jpeg',
-  bio: `  Andy is a curious and adventurous little beagle who loves to sniff out new friends. He's always up for a game of fetch and enjoys long naps in the sun.`,
-  owner: [{name: 'Sarah Jenkins', phone: '619-555-1234', email: 'sarahjenkins@gmail.com'}],
-  age: 3,
-  breed: 'Beagle',
-  id: 2,
-  favorite_places: ["Balboa Park", "The Barking Lot", "Mount Sniffmore"],
-  favorite_foods: ["Pupperoni Pizza", "Woofle with Maple Syrup", "Bark-B-Q Ribs"],
-  schedule: {
-    Monday: {"time": "10:00 AM", "duration": "1 hour"},
-    Tuesday: null,
-    Wednesday: {"time": "2:00 PM", "duration": "2 hours"},
-    Thursday: null,
-    Friday: {"time": "4:00 PM", "duration": "1.5 hours"},
-    Saturday: {"time": "9:00 AM", "duration": "2 hours"},
-    Sunday: null
-  },
-  favorite_activities: ["Fetch", "Tug of War", "Hide and Seek"]
-},
-{
   name: 'Paw McCartney',
   img: '/images/paw-profile-pic.jpeg',
   bio: 'Paw is a loyal and protective Rottweiler with a heart of gold. He enjoys leisurely walks and is incredibly gentle with his family members.',
@@ -145,7 +124,28 @@ const dogs = [
       Sunday: null
     },
     favorite_activities: ["Fetch", "Tug of War", "Hide and Seek"]
-    }
+    },
+    {
+      name: 'Anderson Pooper',
+      img: '/images/woof-profile-pic.jpeg',
+      bio: `  Andy is a curious and adventurous little beagle who loves to sniff out new friends. He's always up for a game of fetch and enjoys long naps in the sun.`,
+      owner: [{name: 'Sarah Jenkins', phone: '619-555-1234', email: 'sarahjenkins@gmail.com'}],
+      age: 3,
+      breed: 'Beagle',
+      id: 2,
+      favorite_places: ["Balboa Park", "The Barking Lot", "Mount Sniffmore"],
+      favorite_foods: ["Pupperoni Pizza", "Woofle with Maple Syrup", "Bark-B-Q Ribs"],
+      schedule: {
+        Monday: {"time": "10:00 AM", "duration": "1 hour"},
+        Tuesday: null,
+        Wednesday: {"time": "2:00 PM", "duration": "2 hours"},
+        Thursday: null,
+        Friday: {"time": "4:00 PM", "duration": "1.5 hours"},
+        Saturday: {"time": "9:00 AM", "duration": "2 hours"},
+        Sunday: null
+      },
+      favorite_activities: ["Fetch", "Tug of War", "Hide and Seek"]
+    },
 ]
 
 export default dogs;

@@ -4,7 +4,7 @@
   font-size: 1.25rem;
   /* border: solid rgb(197, 197, 197) 1px; */
   border-radius: 10px;
-  margin: 1.5rem;
+  margin: .5rem;
   padding: 2rem;
   width: 94%;
   box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.3);
@@ -75,4 +75,14 @@
   /* color: #1a759f; */
   cursor: pointer;
   padding: .25rem;
+}
+
+@media(max-width: 768px) {
+  .post {
+    padding: 1rem;
+    box-shadow: none;
+  }
+  .postImage {
+    height: 200px;
+  }
 }

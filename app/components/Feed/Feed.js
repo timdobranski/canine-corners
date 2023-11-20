@@ -9,17 +9,43 @@ export default function Feed({ id }) {
   // State to track the selected filter
   const [filter, setFilter] = useState('all');
 
-  // First, filter by author_id if id is provided, else use all posts
+  // Filter the posts based on author_id or selected filter
   let filteredByAuthor = id ? posts.filter(p => p.author_id === id) : posts;
-
-  // Then, apply the selected type filter
   let displayPosts = filter === 'all' ? filteredByAuthor : filteredByAuthor.filter(post => post.type === filter);
 
   // List of filter options
   const filterOptions = ['all', 'story', 'recipe', 'warning', 'giveaway'];
 
+  // Function to get button/dropdown label
+  const getButtonLabel = (option) => {
+    switch (option) {
+      case 'all':
+        return 'All Posts';
+      case 'story':
+        return 'Stories';
+      default:
+        return option.charAt(0).toUpperCase() + option.slice(1) + 's';
+    }
+  };
+
   return (
-    <div className='feedContainer' style={{ marginTop: id ? '2rem' : '14rem' }}>
+    <div className='feedContainer'>
+      {/* Dropdown for mobile */}
+      <h1 className={styles.hiddenOnDesktop}>Filter Posts</h1>
+      <select
+      className={styles.mobileFilterDropdown}
+      value={filter}
+      onChange={(e) => setFilter(e.target.value)}
+      // Removed the inline style
+    >
+      {filterOptions.map(option => (
+        <option key={option} value={option}>
+          {getButtonLabel(option)}
+        </option>
+      ))}
+    </select>
+
+
       {/* Buttons for selecting the filter */}
       <div className={styles.filterButtons}>
         {filterOptions.map(option => (
@@ -28,16 +54,15 @@ export default function Feed({ id }) {
             className={filter === option ? styles.selectedFilter : ''}
             onClick={() => setFilter(option)}
           >
-            {option.charAt(0).toUpperCase() + option.slice(1)}
+            {getButtonLabel(option)}
           </button>
         ))}
       </div>
 
-      {/* Render only posts that match the selected filter */}
+      {/* Render posts */}
       {displayPosts.map(post => (
         <Post data={post} key={post.id} />
       ))}
-      <h3 className={styles.copyright}>{`Fake Copyright 2023 Tim Dobranski & Canine Corners`}</h3>
     </div>
   );
 }
