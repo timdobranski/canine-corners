@@ -24,7 +24,7 @@ export default function Home() {
         )}
 
         <ComposePost />
-        {/* <Feed /> */}
+        <Feed />
 
         {showRightSidebar && (
           <div className='sidebarRightWrapper'>
