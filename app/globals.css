@@ -120,4 +120,9 @@
   .background {
     background-image: none;
   }
+  @media (max-width: 768px) {
+    .sidebarLeftWrapper, .sidebarRightWrapper {
+      display: none;
+    }
+  }
 }
