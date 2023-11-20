@@ -1,17 +1,4 @@
-/* .filterSelect {
-    width: 80%;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 0 10px;
-    font-size: 16px;
-    color: #333;
-    background-color: #fff;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    margin: 0 auto;
-} */
+
 .filterButtons {
   display: flex;
   flex-direction: row;
@@ -32,7 +19,8 @@
 }
 .selectedFilter {
   background-color: rgb(92, 184, 237);
-  color: white;
+  background-color: #99d98c;
+  color: black;
   font-weight: bold;
   border-radius: 6px;
 

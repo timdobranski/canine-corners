@@ -13,13 +13,13 @@ export default function SidebarLeft () {
       <Link href='/dogs'>
         <h2>Dogs</h2>
       </Link>
-      <Link href='/dogs'>
+      <Link href='/messages'>
         <h2>Messages</h2>
       </Link>
       <Link href='/profile?id=1'>
         <h2>Profile</h2>
       </Link>
-      <Link href='/dogs'>
+      <Link href='/schedule'>
         <h2>Your Schedule</h2>
       </Link>
     </div>

@@ -1,0 +1,48 @@
+.scheduleWrapper {
+  border-radius: 10px;
+  margin-top: 1rem;
+  width: 700px;
+  /* border: solid red 4px; */
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.scheduleTable {
+  width: 100%;
+  margin: 0 auto;
+
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.25rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.scheduleThead {
+  background-color: #99d98c;
+
+}
+
+.scheduleThead th {
+
+
+  text-align: center;
+  padding: 8px;
+}
+
+.scheduleTbody td {
+  text-align: center;
+  padding: 8px;
+
+  /* border: 1px solid #ddd; */
+}
+
+.scheduleRow:nth-child(odd) {
+  /* background-color: #f9f9f9; */
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-table {
+    width: 100%;
+  }
+}

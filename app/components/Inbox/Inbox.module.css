@@ -1,0 +1,38 @@
+.messageContainer {
+  background-color: white;
+  border-radius: 10px;
+  margin:1rem;
+  padding: 1rem;
+  width: 60vw;
+
+}
+.messageFrom {
+  display: inline-block;
+  padding: .25rem .5rem .25rem .5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: #99d98c;
+}
+.messageDate {
+
+}
+.messageSubject {
+ font-size: 1.5rem;
+ text-decoration: underline;
+
+}
+
+.messageText {
+  font-size: 1.25rem
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  background-color: #99d98c;
+  border-radius: 10px;
+  padding: .25rem .5rem .25rem .5rem;
+}
+.inboxWrapper {
+  text-align: center;
+}

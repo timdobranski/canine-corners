@@ -5,7 +5,7 @@
     justify-content: flex-start;
     margin: 0 auto;
     margin-top:2rem;
-    width: 100%;
+    width: 94%;
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem 5rem;
@@ -13,7 +13,7 @@
     /* background-color: #76c893;
     background-color: rgb(197, 230, 238);
     background-color: rgba(26, 117, 159, 1); */
-    /* background-color: white; */
+    background-color: white;
     border-radius: 10px;
     /* overflow-y: auto; */
 }
@@ -21,7 +21,7 @@
 
 }
 .imgContainer {
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .name {
@@ -39,4 +39,43 @@
   background-color: #99d98c;
   background-color: #1a759f;
   background-color: white;
+}
+.favoritesCarousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin: 2rem 0rem;
+}
+.places {
+  border-radius: 6px;
+  background-color: #168aad;
+  padding: 1rem;
+  margin: 1rem;
+  width: 250px;
+}
+.foods {
+  border-radius: 6px;
+  background-color: #f7ec96;
+  padding: 1rem;
+  margin: 1rem;
+
+}
+.activities {
+  border-radius: 6px;
+  background-color: rgb(249, 143, 141);
+  padding: 1rem;
+  margin: 1rem;
+  width: 250px;
+}
+.profileBox {
+  background-color: #99d98c;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 80%;
+}
+.sectionTitle {
+  font-weight: bold;
+  text-decoration: underline;
 }

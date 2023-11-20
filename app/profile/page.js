@@ -7,6 +7,7 @@ import { useSearchParams } from 'next/navigation';
 import styles from './profile.module.css';
 import posts from '../../fakePosts.js';
 import Feed from '../components/Feed/Feed';
+import Schedule from '../components/Schedule/Schedule';
 
 export default function ProfilePage() {
   // const [dog, setDog] = useState(null);
@@ -24,6 +25,10 @@ export default function ProfilePage() {
   return (
     <div className={styles.profilePageContainer}>
       <Profile data={foundDog} posts={dogPosts} />
+      <div className={styles.scheduleContainer}>
+        <h2>{`${foundDog.name}'s Park Schedule:`}</h2>
+        <Schedule schedule={foundDog.schedule} />
+      </div>
       <Feed id={foundDog.id}/>
     </div>
   )

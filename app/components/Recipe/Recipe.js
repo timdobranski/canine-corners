@@ -2,7 +2,6 @@ import styles from './Recipe.module.css';
 
 
 export default function Recipe({ recipe }) {
-  console.log('recipe: ', recipe);
   return (
     <div className={styles.recipecontainer}>
       <div className={styles.recipeDescriptionContainer}>

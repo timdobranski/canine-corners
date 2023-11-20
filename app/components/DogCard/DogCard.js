@@ -1,16 +1,21 @@
 import styles from './DogCard.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DogCard({ dog }) {
   return (
     <div className={styles.dogCardWrapper}>
       <div className={styles.dogCardImage}>
         <div style={{ position: 'relative', width: 'auto', height: '200px', overflow: 'hidden' }}>
-          <Image src={dog.img} alt={dog.name} layout='fill' objectFit='cover' objectPosition='center' />
+          <Link href={`/profile?id=${dog.id}`}>
+            <Image src={dog.img} alt={dog.name} layout='fill' objectFit='cover' objectPosition='center' />
+          </Link>
         </div>
       </div>
       <div className={styles.dogCardInfoWrapper}>
+      <Link href={`/profile?id=${dog.id}`}>
         <h2 className={styles.name}>{dog.name}</h2>
+      </Link>
         <h3 className={styles.ageBreed}>{`${dog.age} year old ${dog.breed}`}</h3>
         <p className={styles.bio}>{dog.bio}</p>
       </div>
