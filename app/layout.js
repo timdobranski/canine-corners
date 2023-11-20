@@ -11,10 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className='app'>
-        <Header />
-        <div className='background'>
+        {/* <Header /> */}
+        {/* <div className='background'> */}
           {children}
-        </div>
+        {/* </div> */}
         </body>
     </html>
   )
