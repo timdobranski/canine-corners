@@ -44,7 +44,7 @@ export default function Post({ data }) {
 
         {data.img ? <img className={styles.postImage} src={data.img} alt={data.imageAlt} /> : null}
 
-      {/* <div className={styles.postFooter}>
+      <div className={styles.postFooter}>
         <div className={styles.postReactContainer}>
           <FontAwesomeIcon icon={faThumbsUp} className={styles.icon}/>
 
@@ -61,7 +61,7 @@ export default function Post({ data }) {
           <FontAwesomeIcon icon={faFlag} className={styles.icon}/>
 
         </div>
-      </div> */}
+      </div>
 
     </div>
   )
