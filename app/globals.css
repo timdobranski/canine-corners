@@ -105,11 +105,15 @@
   }
 }
 
-
+.sidebarWrapper, .sidebarRightWrapper {
+  display: flex;
+}
 @media(max-width: 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: black;
+    /* border: solid red 4px; */
+    margin-top: -10px;
   }
   .appContent {
     min-width:96vw;
@@ -129,7 +133,21 @@
   .background {
     background-image: none;
   }
-  .sidebarLeftWrapper, .sidebarRightWrapper {
+  .sidebarToggleLeft, .sidebarToggleRight {
+    display: block; /* Show these buttons on mobile */
+  }
+
+  .sidebarWrapper, .sidebarRightWrapper {
+    /* Mobile specific styles for sidebar */
+    display: none; /* Initially hidden on mobile */
+  }
+  .sidebarWrapper, .sidebarRightWrapper {
     display: none;
+  }
+
+  /* Show the sidebar when it's open */
+  .sidebarOpen {
+    display: flex;
+  }
 }
-}
+
