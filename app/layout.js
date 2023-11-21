@@ -7,6 +7,7 @@ import SidebarLeft from './components/SidebarLeft/SidebarLeft';
 import SidebarRight from './components/SidebarRight/SidebarRight';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDog, faUserFriends, faBars } from '@fortawesome/free-solid-svg-icons';
+import Head from 'next/head';
 
 
 
@@ -28,6 +29,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <Head>
+        <title>Canine Corners</title>
+        <meta name="description" content="A place for dogs to connect" />
+      </Head>
+
       <body className='app'>
         <Header
           toggleLeftSidebar={toggleLeftSidebar}
