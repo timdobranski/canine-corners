@@ -21,7 +21,6 @@
 
 
 .appContent {
-  opacity: 0;
   width: 50vw;
   min-width:500px;
   height: auto;
@@ -32,11 +31,12 @@
   border: solid rgb(114, 114, 114) 1px;
   border-radius: 10px;
   display: grid;
+  opacity: 0;
   animation-name: fade-in;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-  animation-delay: 1s;
+  animation-delay: .5s;
 }
 .feedContainer {
   /* border: solid blue 4px; */
@@ -89,7 +89,7 @@
   margin-bottom: 0;
   padding: 0;
   color: #60ff8b;
-  color: white;
+  color: black;
   /* border: solid red 4px; */
   margin-bottom: -20px;
 

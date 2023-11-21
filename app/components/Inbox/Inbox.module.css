@@ -36,3 +36,13 @@
 .inboxWrapper {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .inboxWrapper {
+    margin-bottom: 5rem;
+
+  }
+  .messageContainer {
+    width: 90vw;
+  }
+}

@@ -112,22 +112,21 @@ text-align: center;
   }
 }
 .recipeLabel {
-  background-color:#f7ec96;
-  border: solid 2px #000000;
-
-}
+  color: white;
+  background-color: #168aad;
+  }
 .storyLabel {
-  background-color: #4dc5e9;
-  border: solid 2px #000000;
+  color: white;
+  background-color: #168aad;
 }
 .warningLabel {
-  background-color:#fbb3b3;
-  border: solid 2px #000000;
+  color: white;
+  background-color: #168aad;
 }
 
 .giveawayLabel {
-  background-color:#cbbcf9;
-  border: solid 2px #000000;
+  color: white;
+  background-color: #168aad;
 }
 
 

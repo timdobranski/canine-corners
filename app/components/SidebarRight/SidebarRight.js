@@ -4,9 +4,18 @@ import styles from './SidebarRight.module.css';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function SidebarLeft () {
+export default function SidebarLeft ({ closeSidebar }) {
+  const handleItemClick = () => {
+    if (window.innerWidth <= 768) { // Check for mobile screen width
+      console.log('closing sidebar')
+      closeSidebar();
+    } else {
+      console.log('not closing sidebar')
+    }
+  };
+
   return (
-    <div className={styles.sidebarWrapper}>
+    <div className={styles.sidebarWrapper} onClick={handleItemClick}>
 
         <h2 className={styles.header}>Friends At The Park Today:</h2>
         <div className={styles.atPark}>

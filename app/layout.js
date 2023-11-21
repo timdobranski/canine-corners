@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './globals.css';
 import Header from './components/Header/Header';
 import SidebarLeft from './components/SidebarLeft/SidebarLeft';
@@ -24,6 +24,8 @@ export default function RootLayout({ children }) {
     setIsLeftSidebarOpen(false); // Close left sidebar when opening right
   };
 
+
+
   return (
     <html lang="en">
       <body className='app'>
@@ -34,10 +36,10 @@ export default function RootLayout({ children }) {
           isRightSidebarOpen={isRightSidebarOpen}
         />
         <div className={isLeftSidebarOpen ? 'sidebarWrapper sidebarOpen' : 'sidebarWrapper'}>
-          <SidebarLeft />
+        <SidebarLeft closeSidebar={() => setIsLeftSidebarOpen(false)} />
         </div>
         <div className={isRightSidebarOpen ? 'sidebarRightWrapper sidebarOpen' : 'sidebarRightWrapper'}>
-          <SidebarRight />
+        <SidebarRight closeSidebar={() => setIsRightSidebarOpen(false)} />
         </div>
         <div className='background'>
           {children}
