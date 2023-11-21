@@ -83,23 +83,14 @@ text-align: center;
 
 @media(max-width: 768px) {
   .postTypesContainer {
-    display: none; /* Hide label filters on mobile */
-  }
-
-  .mobilePostTypeDropdown {
-    display: block; /* Show dropdown on mobile */
-    width: 90%; /* Adjust as needed */
-    margin: 0 auto;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 10px;
-    box-shadow: 6px 6px 6px -5px rgba(0,0,0,0.3);
+    width: 90vw;
   }
   .postSubmitButton {
     margin-right: 0;
   }
   .postType {
-    font-size: 2.25rem;
+    margin: .25rem;
+    font-size: 1.25rem;
   }
   .composePostTitle {
     color: white;
