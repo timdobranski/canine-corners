@@ -1,6 +1,6 @@
 .post {
   position: relative;
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, .8);
   font-size: 1.25rem;
   /* border: solid rgb(197, 197, 197) 1px; */
   border-radius: 10px;
