@@ -82,8 +82,12 @@ text-align: center;
 }
 
 @media(max-width: 768px) {
+  .composePostContainer {
+    /* border: solid rgb(0, 0, 0) 4px; */
+    width: 100%;
+  }
   .postTypesContainer {
-    width: 90vw;
+    width: 98vw;
   }
   .postSubmitButton {
     margin-right: 0;
@@ -124,5 +128,6 @@ text-align: center;
 @media(max-width: 500px) {
   .postTextArea {
     height: 80px;
+    width: 90vw;
   }
 }

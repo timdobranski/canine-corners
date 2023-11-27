@@ -116,9 +116,12 @@
     margin-top: -10px;
   }
   .appContent {
-    min-width:96vw;
+    width: 100vw;
     height: auto;
     padding-top: 0;
+    margin-top: .5rem;
+    border-radius: 10px;
+    /* border: solid red 4px; */
     /* margin-top: 20rem; */
     /* background-color: rgba(26, 117, 159, 0.5); */
     /* border-left: solid rgb(114, 114, 114) 1px;
@@ -129,6 +132,8 @@
   }
   .feedContainer {
     margin-top: 2rem;
+    width: 100%;
+    /* border: solid blue 4px; */
   }
   .background {
     background-image: none;

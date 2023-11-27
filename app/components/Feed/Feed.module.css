@@ -39,6 +39,13 @@
 
 }
 @media(max-width: 768px) {
+  .feedContainer {
+    position: relative;
+
+    width: 90% !important;
+    overflow: hidden;
+    background: black;
+  }
   .filterButtons {
     display: none; /* Hide button filters on mobile */
   }

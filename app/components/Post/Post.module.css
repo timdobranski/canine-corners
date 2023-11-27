@@ -39,7 +39,8 @@
 .link {
   color: #1a759f;
   text-decoration: underline;
-  width: 400px;
+  /* width: 400px; */
+  width: 100px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -104,6 +105,9 @@
   .post {
     padding: 1rem;
     box-shadow: none;
+    width: 90vw;
+    overflow: hidden;
+    /* border: solid green 8px; */
   }
   .postImage {
     height: 200px;
