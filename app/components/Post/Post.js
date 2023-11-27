@@ -1,10 +1,11 @@
 import { formatDistanceToNow } from 'date-fns';
 import styles from './Post.module.css';
-import Recipe from '../Recipe/Recipe';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  { faThumbsUp, faComment, faShare, faFlag } from '@fortawesome/free-solid-svg-icons';
+import { useRouter } from 'next/navigation';
 
 export default function Post({ data }) {
+  const router = useRouter();
 
   const timeFormatter = (data) => {
     const dateTimeString = `${data.date} ${data.time}`;
@@ -37,9 +38,19 @@ export default function Post({ data }) {
 
         <h3 className={styles.author}>{data.author}</h3>
         <h3 className={styles.ago}>{timeAgo}</h3>
-        <h3 className={styles[data.type]}>{data.type}</h3>
+        <h3 className={data.type === 'pet News/Event' ? styles.newsAndEvents : styles[data.type]}>{data.type === 'pet News/Event' ? 'Pet News & Events' : data.type}</h3>
 
-        {(data.type === 'recipe' ? <Recipe recipe={data} /> : <p className={styles.content}>{data.content}</p>)}
+        {(data.type === 'pet News/Event' ?
+       <>
+        <p className={styles.content}>{data.content}</p>
+        <div className={styles.linkContainer}>
+          <p className={styles.link} onClick={() => {router.push(data.link)}}>{data.link}</p>
+          {data.image ? <img className={styles.postImage} src={data.image} alt={data.imageAlt} onClick={() => {router.push(data.link)}}/> : null}
+          </div>
+        </>
+
+
+        : <p className={styles.content}>{data.content}</p>)}
 
 
         {data.img ? <img className={styles.postImage} src={data.img} alt={data.imageAlt} /> : null}

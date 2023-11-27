@@ -7,7 +7,7 @@ export default function ComposePost() {
   const [post, setPost] = useState('');
   const [postType, setPostType] = useState('story');
 
-  const postTypes = ['story', 'recipe', 'warning', 'giveaway']; // Define post types
+  const postTypes = ['story', 'Pet News/Events', 'warning', 'giveaway']; // Define post types
 
   const handleLabelClick = (type) => {
     setPostType(type);
@@ -18,7 +18,7 @@ export default function ComposePost() {
       case 'story':
         return postType === 'story' ? styles.storyLabel : '';
       case 'recipe':
-        return postType === 'recipe' ? styles.recipeLabel : '';
+        return postType === 'Pet News/Events' ? styles.recipeLabel : '';
       case 'warning':
         return postType === 'warning' ? styles.warningLabel : '';
       case 'giveaway':

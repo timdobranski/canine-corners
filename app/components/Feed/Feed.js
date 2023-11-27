@@ -14,7 +14,7 @@ export default function Feed({ id }) {
   let displayPosts = filter === 'all' ? filteredByAuthor : filteredByAuthor.filter(post => post.type === filter);
 
   // List of filter options
-  const filterOptions = ['all', 'story', 'recipe', 'warning', 'giveaway'];
+  const filterOptions = ['all', 'story', 'pet News/Event', 'warning', 'giveaway'];
 
   // Function to get button/dropdown label
   const getButtonLabel = (option) => {
@@ -23,6 +23,8 @@ export default function Feed({ id }) {
         return 'All Posts';
       case 'story':
         return 'Stories';
+      case 'pet News/Event':
+        return 'Pet News & Events';
       default:
         return option.charAt(0).toUpperCase() + option.slice(1) + 's';
     }

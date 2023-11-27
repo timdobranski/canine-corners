@@ -1,10 +1,9 @@
 .sidebarWrapper {
-  top: 100px;
   position: fixed;
   text-align:center;
   /* box-sizing: content-box; */
   right: 1rem;
-  margin: 1rem;
+  /* margin: 1rem; */
   width: 12vw;
   min-width: 200px;
   /* height: calc(100vh - 240px - 2rem); */
@@ -13,10 +12,12 @@
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
-  background-color: rgba(26, 117, 159, .8);
-  border-radius: 10px;
+  background-color: rgba(26, 117, 159, 1);
+  height: 100%;
+  z-index: -1
+  /* border-radius: 10px; */
   /* border: solid red 4px; */
-  border: solid rgb(0, 0, 0) 1px;
+  /* border: solid rgb(0, 0, 0) 1px; */
 }
 
 

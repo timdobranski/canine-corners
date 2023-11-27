@@ -26,6 +26,29 @@
   padding: 1rem 0rem 1rem .5rem;
 
 }
+.postImage:hover {
+  cursor: pointer;
+}
+.linkContainer {
+  background: white;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+}
+.link {
+  color: #1a759f;
+  text-decoration: underline;
+  width: 400px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.link:hover {
+  color: black;
+  cursor: pointer;
+
+}
 .postFooter {
   display: flex;
   flex-direction: row;
@@ -41,7 +64,7 @@
   display: inline-block;
   padding: .25rem .5rem .25rem .5rem;
 }
-.recipe {
+.newsAndEvents {
   background-color:#f7ec96;
   display: inline-block;
   padding: .25rem .5rem .25rem .5rem;
