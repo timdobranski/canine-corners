@@ -9,7 +9,6 @@
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
-
   border-radius: 10px;
 
 }
@@ -68,9 +67,9 @@
 
 @media (max-width: 768px) {
   .headerWrapper{
-    width: 96%;
+    width: calc(100vw - 2rem);
     height: 80px;
-    margin: 0 auto;
+    margin: 1rem;
     margin-top: .5rem;
     background-color: #99d98c;
     border-radius: 10px;
