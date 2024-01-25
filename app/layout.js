@@ -34,7 +34,8 @@ export default function RootLayout({ children }) {
         <meta name="description" content="A place for dogs to connect" />
       </Head>
 
-      <body className='app'>
+      <body >
+        <div className='app'>
         <Header
           toggleLeftSidebar={toggleLeftSidebar}
           toggleRightSidebar={toggleRightSidebar}
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
         </div>
         <div className='background'>
           {children}
+        </div>
         </div>
       </body>
     </html>

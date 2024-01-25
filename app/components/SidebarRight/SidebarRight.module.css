@@ -3,7 +3,7 @@
   text-align:center;
   /* box-sizing: content-box; */
   right: 1rem;
-  /* margin: 1rem; */
+  margin: 1rem;
   width: 12vw;
   min-width: 200px;
   /* height: calc(100vh - 240px - 2rem); */
@@ -13,9 +13,9 @@
   align-items: center;
   padding: 1rem;
   background-color: rgba(26, 117, 159, 1);
-  height: 100%;
-  z-index: -1
-  /* border-radius: 10px; */
+  height: fit-content;
+  z-index: -1;
+  border-radius: 10px;
   /* border: solid red 4px; */
   /* border: solid rgb(0, 0, 0) 1px; */
 }

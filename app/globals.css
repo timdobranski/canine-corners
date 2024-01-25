@@ -17,19 +17,21 @@
 .app {
   /* border: solid red 4px; */
   font-family: GeoSansLight;
+  width: 90vw;
+  box-sizing: border-box;
 }
 
 
 .appContent {
   width: 50vw;
   min-width:500px;
+  margin-top: 1rem;
+  border-radius: 10px;
   height: auto;
   padding-top: 0;
-  /* margin-top: 1rem; */
+  box-sizing:border-box;
   background-color: rgba(26, 117, 159, 0.5);
   border-left: solid rgb(114, 114, 114) 1px;
-  /* border: solid rgb(114, 114, 114) 1px; */
-  /* border-radius: 10px; */
   display: grid;
   opacity: 0;
   animation-name: fade-in;
@@ -66,7 +68,9 @@
   width: 100vw;
   overflow-y: auto;
   z-index: -2;
-
+  box-sizing: border-box;
+  border-top: solid 2px rgb(194, 194, 194);
+  /* border: solid red 2px; */
 }
 .background::before {
   content: '';
@@ -83,16 +87,13 @@
   display: inline-block;
   font-size: 4rem;
   font-family: Kitten Klub;
-  /* border: solid red 4px; */
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 0;
   padding: 0;
   color: #60ff8b;
   color: black;
-  /* border: solid red 4px; */
   margin-bottom: -20px;
-
 }
 
 /* fade-in */
@@ -112,7 +113,6 @@
   .title {
     font-size: 2.25rem;
     color: black;
-    /* border: solid red 4px; */
     margin-top: -10px;
   }
   .appContent {
@@ -121,19 +121,13 @@
     padding-top: 0;
     margin-top: .5rem;
     border-radius: 10px;
-    /* border: solid red 4px; */
-    /* margin-top: 20rem; */
-    /* background-color: rgba(26, 117, 159, 0.5); */
-    /* border-left: solid rgb(114, 114, 114) 1px;
-    border: solid rgb(114, 114, 114) 1px; */
     background-color: rgb(38, 116, 150);
-    /* border-radius: 10px; */
+
     display: grid;
   }
   .feedContainer {
     margin-top: 2rem;
     width: 100%;
-    /* border: solid blue 4px; */
   }
   .background {
     background-image: none;

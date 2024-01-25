@@ -17,7 +17,7 @@ export default function ComposePost() {
     switch (type) {
       case 'story':
         return postType === 'story' ? styles.storyLabel : '';
-      case 'recipe':
+      case 'Pet News':
         return postType === 'Pet News' ? styles.recipeLabel : '';
       case 'warning':
         return postType === 'warning' ? styles.warningLabel : '';
